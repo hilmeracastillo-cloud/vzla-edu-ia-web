@@ -63,8 +63,14 @@ export const part1Chapter: Chapter = {
     {
       id: 'p1-b-3',
       type: 'paragraph',
-      text: `Las evaluaciones diagnósticas y estandarizadas evidencian que la gran mayoría de los alumnos culmina el ciclo primario y secundario sin consolidar habilidades fundamentales en comprensión lectora, lógica matemática básica ni ciencias experimentales [1.3], [1.4]. La ausencia casi absoluta de instrucción práctica en el idioma inglés y en tecnologías de la información restringe drásticamente sus oportunidades de inserción en la economía global del conocimiento [1.1], [1.3].`,
-      footnoteIds: ["fn-1-3", "fn-1-4", "fn-1-1", "fn-1-3"],
+      text: `Las evaluaciones diagnósticas y estandarizadas evidencian que la gran mayoría de los alumnos culmina el ciclo primario y secundario sin consolidar habilidades fundamentales en comprensión lectora, lógica matemática básica ni ciencias experimentales [1.3], [1.4], [1.13].`,
+      footnoteIds: ["fn-1-3", "fn-1-4", "fn-1-13"],
+    },
+    {
+      id: 'p1-b-3-secel',
+      type: 'paragraph',
+      text: `La medición independiente más reciente, el Sistema de Evaluación de Conocimientos en Línea (SECEL) de la Escuela de Educación de la UCAB correspondiente al año escolar 2024-2025 —más de 6.000 pruebas diagnósticas de Matemáticas y más de 5.000 de Habilidad Verbal, aplicadas en Caracas, Miranda, Bolívar, Nueva Esparta, Falcón, Lara y Zulia entre colegios y organizaciones participantes—, reporta un promedio global de 7,08 sobre 20 en Matemáticas con 80,79% de aplazados, y de 10,50 sobre 20 en Habilidad Verbal con 60,46% de aprobados; aun así, siete de cada diez estudiantes fallan al intentar identificar ideas implícitas o elaborar opiniones críticas sobre lo que leen [1.13]. Los estudiantes muestran habilidades en aritmética básica, pero fallan al representar condiciones en lenguaje matemático o interpretar soluciones, y la brecha entre planteles privados y públicos persiste: 7,56 frente a 6,55 en Matemáticas y 11,23 frente a 9,82 en Habilidad Verbal [1.13]. La ausencia casi absoluta de instrucción práctica en el idioma inglés y en tecnologías de la información restringe drásticamente sus oportunidades de inserción en la economía global del conocimiento [1.1], [1.3].`,
+      footnoteIds: ["fn-1-13", "fn-1-1", "fn-1-3"],
     },
     {
       id: 'p1-2-profesores',
@@ -373,6 +379,15 @@ export const part1Chapter: Chapter = {
         "year": "2025",
         "justification": "Evidencia y sustento estadístico para la Parte 1 (Organización Internacional del Trabajo - ILOSTAT, 2025).",
         "url": "https://ilostat.ilo.org/data/"
+    },
+    "[1.13]": {
+        "id": "13",
+        "code": "[1.13]",
+        "title": "Sistema de Evaluación de Conocimientos en Línea (SECEL): Informe de resultados, diciembre 2025 (año escolar 2024-2025)",
+        "authorOrSource": "Escuela de Educación, Universidad Católica Andrés Bello (UCAB)",
+        "year": "2025",
+        "justification": "Diagnóstico nacional de competencias en Matemáticas (7,08/20; 80,79% aplazados) y Habilidad Verbal (10,50/20) en colegios públicos y privados participantes.",
+        "url": "https://drive.google.com/file/d/19A_Pxi2_szo17fHL7_R0Qqfbj-pXW__C/view?usp=drive_link"
     }
 },
   references: [
@@ -434,7 +449,7 @@ export const part1Chapter: Chapter = {
         "id": "ref-1-10",
         "code": "[1.10]",
         "citation": "**[1.10]** El Nacional. \"Ministerio de Educación lanza plan nacional para renovar materias\". 24 de junio de 2025. https://www.elnacional.com/2025/06/ministerio-de-educacion-lanza-plan-nacional-para-renovar-materias/",
-        "url": "https://www.elnacional.com/2025/06/ministerio-de-educacion-lanza-plan-nacional-para-renovar-materias/"
+        "url": "https://www.elnacional.com/2025/06/ministerio-de-educacion-lanza-plan-nacional-para-renovar-materias/",
     },
     {
         "id": "ref-1-11",
@@ -447,6 +462,12 @@ export const part1Chapter: Chapter = {
         "code": "[1.12]",
         "citation": "**[1.12]** Organización Internacional del Trabajo - ILOSTAT. (2025). Country Profiles: Venezuela Labor Force and Informality Statistics. https://ilostat.ilo.org/data/",
         "url": "https://ilostat.ilo.org/data/"
+    },
+    {
+        "id": "ref-1-13",
+        "code": "[1.13]",
+        "citation": "**[1.13]** Escuela de Educación, Universidad Católica Andrés Bello (UCAB). (2025). Sistema de Evaluación de Conocimientos en Línea (SECEL): Informe de resultados, diciembre 2025 (año escolar 2024-2025). https://drive.google.com/file/d/19A_Pxi2_szo17fHL7_R0Qqfbj-pXW__C/view?usp=drive_link",
+        "url": "https://drive.google.com/file/d/19A_Pxi2_szo17fHL7_R0Qqfbj-pXW__C/view?usp=drive_link"
     }
 ],
 };

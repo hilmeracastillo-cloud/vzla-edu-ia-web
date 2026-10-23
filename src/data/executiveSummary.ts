@@ -74,7 +74,7 @@ export const executiveSummaryChapter: Chapter = {
     {
       id: 'exec-p-5',
       type: 'paragraph',
-      text: `3. La mayoría culmina primaria y secundaria sin habilidades fundamentales de lectura, matemática ni ciencias. (DevTech Systems 2023)`,
+      text: `3. La mayoría culmina primaria y secundaria sin habilidades fundamentales de lectura, matemática ni ciencias: 80,79% reprueba Matemáticas (promedio 7,08/20) y 7 de cada 10 estudiantes no identifican ideas implícitas ni elaboran opiniones críticas sobre lo que leen. (SECEL UCAB 2025, año escolar 2024-2025; más de 6.000 pruebas de Matemáticas y 5.000 de Habilidad Verbal)`,
       hangingIndent: true,
     },
     {

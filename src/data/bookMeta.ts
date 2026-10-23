@@ -17,7 +17,7 @@ export const bookMeta: BookMetadata = {
   program: 'Propuesta para el Programa Esta Tierra de Gracia',
   author: 'Hilmer Castillo Bescanza',
   email: 'hilmeracastillo@gmail.com',
-  date: 'Septiembre 2026',
+  date: 'Septiembre 2026 — Actualización: octubre 2026',
   version: '1.0.0',
   totalChapters: 7,
   totalCaseStudies: 25,
