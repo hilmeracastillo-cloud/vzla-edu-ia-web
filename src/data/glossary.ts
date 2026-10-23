@@ -1,0 +1,198 @@
+import { GlossaryTerm } from '../types';
+
+export const glossaryTerms: GlossaryTerm[] = [
+  {
+    id: 'nema',
+    term: 'NEMA (Núcleos de Educación Modular Autónoma)',
+    aliases: ['NEMA', 'Núcleos NEMA', 'Complejo NEMA', 'módulos NEMA'],
+    category: 'Infraestructura NEMA',
+    shortDefinition: 'Infraestructura educativa modular y autosuficiente (energía solar LiFePO4, agua e Internet satelital) diseñada para operar en contextos con colapso de servicios públicos.',
+    fullDefinition: 'Modelo de infraestructura modular estandarizada que responde a las fallas estructurales de servicios básicos en Venezuela. Cada unidad NEMA integra generación fotovoltaica independiente con baterías LiFePO4 de 48 horas de autonomía, sistema de filtrado y ósmosis inversa de agua, y conectividad satelital Starlink con Wi-Fi 6, permitiendo albergar a 150 estudiantes en tres turnos pedagógicos.',
+    exampleInVenezuela: 'Instalación de unidades en escuelas rurales de Barinas o barrios de Petare sin suministro eléctrico continuo ni red de fibra óptica.',
+    relatedTerms: ['Soberanía Tecnológica', 'Salto de Rana (Leapfrogging)', 'Modelo 1:1'],
+    chapters: ['capitulo-2', 'resumen-ejecutivo'],
+  },
+  {
+    id: 'its',
+    term: 'Sistemas Tutores Inteligentes (ITS)',
+    aliases: ['ITS', 'Sistema Tutor Inteligente', 'tutores inteligentes', 'tutor inteligente'],
+    category: 'Tecnología e IA',
+    shortDefinition: 'Sistemas computacionales que emulan la tutoría humana 1 a 1 adaptando el contenido y ritmo a las necesidades de cada estudiante.',
+    fullDefinition: 'Plataformas informáticas basadas en modelos cognitivos y algoritmos de aprendizaje adaptativo que guían paso a paso al estudiante, detectan conceptos erróneos de forma inmediata y formulan preguntas socráticas sin dar la respuesta directamente.',
+    exampleInVenezuela: 'Uso de plataformas como Khanmigo, ALEKS o Socratic en aulas NEMA para apoyar el aprendizaje de matemáticas y ciencias.',
+    relatedTerms: ['Aprendizaje Adaptativo', 'Andamiaje Cognitivo (Scaffolding)', 'IA Generativa'],
+    chapters: ['introduccion', 'capitulo-1', 'capitulo-2', 'apendice-2'],
+  },
+  {
+    id: 'ia-generativa',
+    term: 'Inteligencia Artificial Generativa',
+    aliases: ['IA Generativa', 'IAG', 'modelos generativos', 'modelos de lenguaje'],
+    category: 'Tecnología e IA',
+    shortDefinition: 'Modelos de aprendizaje profundo capaces de crear texto, imágenes, código, audio y explicaciones conceptuales a partir de instrucciones en lenguaje natural.',
+    fullDefinition: 'Familia de modelos neuronales (LLMs, multimodales) entrenados con amplios volúmenes de datos que permiten a estudiantes y educadores sintetizar información compleja, generar simulaciones de laboratorio y crear materiales pedagógicos personalizados en cuestión de segundos.',
+    exampleInVenezuela: 'Generación instantánea de guías de estudio ilustradas y contextualizadas para la realidad venezolana.',
+    relatedTerms: ['Sistemas Tutores Inteligentes (ITS)', 'Prompts Pedagógicos', 'Ética Algorítmica'],
+    chapters: ['introduccion', 'capitulo-1', 'capitulo-3'],
+  },
+  {
+    id: 'curriculo-aumentado',
+    term: 'Currículo Aumentado',
+    aliases: ['Currículo Aumentado', 'currículo adaptativo', 'currículum aumentado'],
+    category: 'Pedagogía y Metodología',
+    shortDefinition: 'Transformación del plan de estudios tradicional donde la IA asume la entrega repetitiva de contenidos y el aula se dedica al pensamiento crítico y proyectos prácticos.',
+    fullDefinition: 'Marco pedagógico que fusiona los objetivos curriculares con asistentes cognitivos de IA. Libera al docente de la clase magistral expositiva unidireccional y redirige el tiempo de aula hacia debates, laboratorios de resolución de problemas locales y destrezas para la vida.',
+    exampleInVenezuela: 'Un currículo donde los estudiantes aprenden álgebra a su propio ritmo con un tutor digital y resuelven en equipo problemas de potabilización de agua en su comunidad.',
+    relatedTerms: ['Evaluación Auténtica', 'Docente Curador y Facilitador', 'NEMA'],
+    chapters: ['capitulo-1', 'capitulo-2', 'resumen-ejecutivo'],
+  },
+  {
+    id: 'salto-de-rana',
+    term: 'Salto de Rana (Leapfrogging)',
+    aliases: ['Salto de Rana', 'Leapfrogging', 'salto tecnológico'],
+    category: 'Políticas y Estrategia',
+    shortDefinition: 'Estrategia de desarrollo que consiste en saltarse etapas tecnológicas intermedias obsoletas y adoptar directamente la vanguardia disponible.',
+    fullDefinition: 'Concepto económico y tecnológico donde un país o sistema rezagado no recorre cronológicamente todas las fases históricas de sus predecesores (ej. electrificación analógica previa a la digital), sino que adopta directamente las soluciones más avanzadas (ej. micro-redes solares e IA satelital).',
+    exampleInVenezuela: 'En lugar de intentar reconstruir manuales impresos de hace 20 años y redes telefónicas de cobre, implementar directamente terminales satelitales con tutores socráticos de IA.',
+    relatedTerms: ['NEMA', 'Soberanía Tecnológica', 'Esta Tierra de Gracia'],
+    chapters: ['introduccion', 'capitulo-1', 'resumen-ejecutivo'],
+  },
+  {
+    id: 'aprendizaje-adaptativo',
+    term: 'Aprendizaje Adaptativo',
+    aliases: ['Aprendizaje Adaptativo', 'rutas de aprendizaje adaptativas', 'enseñanza adaptativa'],
+    category: 'Pedagogía y Metodología',
+    shortDefinition: 'Método educativo que utiliza algoritmos para ajustar en tiempo real el nivel de dificultad, ritmo y estilo del contenido según el desempeño del estudiante.',
+    fullDefinition: 'Enfoque asistido por software donde cada estudiante tiene una ruta de progresión personalizada. Si el alumno domina una habilidad, el sistema avanza; si tropieza con una laguna previa, el sistema retrocede e identifica la causa raíz en lugar de reprobarlo.',
+    exampleInVenezuela: 'Nivelación acelerada de niños con rezago escolar de 3 o 4 años tras la crisis humanitaria.',
+    relatedTerms: ['Sistemas Tutores Inteligentes (ITS)', 'Andamiaje Cognitivo (Scaffolding)', 'Microlearning'],
+    chapters: ['capitulo-1', 'capitulo-2', 'apendice-1'],
+  },
+  {
+    id: 'evaluacion-autentica',
+    term: 'Evaluación Auténtica',
+    aliases: ['Evaluación Auténtica', 'evaluaciones auténticas', 'evaluación de desempeño'],
+    category: 'Evaluación',
+    shortDefinition: 'Evaluación basada en la resolución de problemas reales, demostración práctica y argumentación, superando el examen memorístico memorizado.',
+    fullDefinition: 'Práctica evaluativa que sustituye las pruebas de opción múltiple (fácilmente resueltas por IA) por defensas orales, proyectos comunitarios, creación de prototipos y análisis crítico donde el proceso de razonamiento importa más que la respuesta final.',
+    exampleInVenezuela: 'Defensa oral frente a un jurado de un plan de cultivo hidropónico escolar asistido por sensores.',
+    relatedTerms: ['Currículo Aumentado', 'Docente Curador y Facilitador', 'Alfabetización en IA'],
+    chapters: ['capitulo-1', 'capitulo-3'],
+  },
+  {
+    id: 'docente-curador',
+    term: 'Docente Curador y Facilitador',
+    aliases: ['Docente Curador', 'docente facilitador', 'rol del docente', 'docente mentor'],
+    category: 'Pedagogía y Metodología',
+    shortDefinition: 'Reconversión del docente de transmisor de contenidos a mentor emocional, curador de experiencias y guía ético del proceso educativo.',
+    fullDefinition: 'Nuevo perfil profesional del educador en la era de la inteligencia artificial. El profesor ya no compite con la máquina en almacenamiento de datos, sino que se especializa en motivación, andamiaje socrático, formación en valores ciudadanos y supervisión de la precisión de las respuestas del software.',
+    exampleInVenezuela: 'Un maestro que organiza círculos de debate y resolución de dilemas éticos mientras la IA asiste los ejercicios matemáticos.',
+    relatedTerms: ['Currículo Aumentado', 'Andamiaje Cognitivo (Scaffolding)'],
+    chapters: ['capitulo-2', 'capitulo-3', 'apendice-1'],
+  },
+  {
+    id: 'esta-tierra-de-gracia',
+    term: 'Esta Tierra de Gracia',
+    aliases: ['Esta Tierra de Gracia', 'Plan Tierra de Gracia', 'Programa Esta Tierra de Gracia'],
+    category: 'Políticas y Estrategia',
+    shortDefinition: 'Programa integral para la reconstrucción económica, social e institucional de Venezuela en la transición democrática.',
+    fullDefinition: 'Proyecto de país formulado por equipos técnicos multidisciplinarios que establece las bases estratégicas, planes de inversión y prioridades sectoriales para recuperar la calidad de vida, el aparato productivo y el capital humano venezolano.',
+    exampleInVenezuela: 'El marco en el cual se inserta esta propuesta educativa basada en NEMA e inteligencia artificial.',
+    relatedTerms: ['Salto de Rana (Leapfrogging)', 'NEMA', 'Soberanía Tecnológica'],
+    chapters: ['introduccion', 'resumen-ejecutivo'],
+  },
+  {
+    id: 'brecha-digital',
+    term: 'Brecha Digital y Brecha Cognitiva',
+    aliases: ['Brecha Digital', 'brecha cognitiva', 'desigualdad digital'],
+    category: 'Políticas y Estrategia',
+    shortDefinition: 'Desigualdad en el acceso a tecnologías de información sumada a la desigualdad en las habilidades cognitivas para aprovecharlas.',
+    fullDefinition: 'Fenómeno dual que en Venezuela no se limita a carecer de computadoras o teléfonos inteligentes (brecha de acceso), sino que abarca la falta de electricidad, conectividad confiable y formación para interrogar críticamente los sistemas de IA.',
+    exampleInVenezuela: 'Disparidad entre un estudiante urbano con conexión privada y uno de escuela pública rural desconectado.',
+    relatedTerms: ['NEMA', 'Alfabetización en IA', 'Salto de Rana (Leapfrogging)'],
+    chapters: ['introduccion', 'capitulo-1', 'capitulo-2'],
+  },
+  {
+    id: 'andamiaje-cognitivo',
+    term: 'Andamiaje Cognitivo (Scaffolding)',
+    aliases: ['Andamiaje Cognitivo', 'andamiaje', 'Scaffolding'],
+    category: 'Pedagogía y Metodología',
+    shortDefinition: 'Estructura de apoyo temporal que se brinda al alumno durante el aprendizaje y se retira gradualmente a medida que gana autonomía.',
+    fullDefinition: 'Concepto derivado de la teoría de Vygotsky sobre la Zona de Desarrollo Próximo. En sistemas de IA, se traduce en pistas graduadas, descomposiciones de problemas en subtareas y retroalimentación que impide la frustración sin revelar la solución.',
+    exampleInVenezuela: 'Un tutor de IA que ante un problema de fracciones ofrece primero una representación gráfica y solo si persiste la duda ofrece una regla algebraica.',
+    relatedTerms: ['Sistemas Tutores Inteligentes (ITS)', 'Aprendizaje Adaptativo'],
+    chapters: ['capitulo-1', 'apendice-2'],
+  },
+  {
+    id: 'prompts-pedagogicos',
+    term: 'Prompts Pedagógicos',
+    aliases: ['Prompts Pedagógicos', 'prompt socrático', 'ingeniería de prompts educativos'],
+    category: 'Tecnología e IA',
+    shortDefinition: 'Instrucciones precisas formuladas a modelos de lenguaje para condicionarlos a enseñar mediante el diálogo socrático en lugar de entregar respuestas directas.',
+    fullDefinition: 'Diseño sistemático de directivas de sistema (System Prompts) que establecen las reglas de interacción de un LLM: rol del tutor, prohibición de realizar las tareas por el alumno, modulación del tono afectivo y adaptación al nivel escolar específico.',
+    exampleInVenezuela: 'Instrucción a la IA: "Actúa como un profesor de física venezolano amable; si el estudiante pide resolver el ejercicio, pregúntale cuál fórmula cree que relaciona fuerza y aceleración".',
+    relatedTerms: ['IA Generativa', 'Sistemas Tutores Inteligentes (ITS)'],
+    chapters: ['capitulo-1', 'capitulo-3'],
+  },
+  {
+    id: 'micro-credenciales',
+    term: 'Micro-credenciales y Badges Digitales',
+    aliases: ['Micro-credenciales', 'microcredenciales', 'badges digitales', 'insignias digitales'],
+    category: 'Evaluación',
+    shortDefinition: 'Certificaciones digitales verificables de competencias específicas adquiridas, más granulares y dinámicas que un título tradicional.',
+    fullDefinition: 'Mecanismo modular de acreditación académica donde los estudiantes obtienen insignias por dominar habilidades concretas (ej. programación básica en Python, análisis de calidad de agua, pensamiento crítico en IA), permitiendo inserción laboral temprana y trayectorias formativas flexibles.',
+    exampleInVenezuela: 'Estudiantes de secundaria que obtienen micro-certificaciones técnicas mientras completan su bachillerato.',
+    relatedTerms: ['Evaluación Auténtica', 'Currículo Aumentado'],
+    chapters: ['capitulo-2', 'capitulo-3'],
+  },
+  {
+    id: 'soberania-tecnologica',
+    term: 'Soberanía Tecnológica Educativa',
+    aliases: ['Soberanía Tecnológica', 'soberanía de datos', 'independencia tecnológica'],
+    category: 'Políticas y Estrategia',
+    shortDefinition: 'Capacidad de un país para gobernar sus datos educativos, elegir estándares abiertos y no depender de un único proveedor corporativo.',
+    fullDefinition: 'Principio estratégico que protege la privacidad de los menores venezolanos, evita el bloqueo de licencias por sanciones o fluctuaciones monetarias, y prioriza el software de código abierto y modelos de IA desplegables localmente en servidores propios o de borde.',
+    exampleInVenezuela: 'Despliegue de modelos de lenguaje pequeños (SLMs) como Llama o Mistral en servidores locales de las escuelas NEMA.',
+    relatedTerms: ['NEMA', 'Ética Algorítmica', 'Salto de Rana (Leapfrogging)'],
+    chapters: ['capitulo-3', 'resumen-ejecutivo'],
+  },
+  {
+    id: 'modelo-1-a-1',
+    term: 'Modelo 1:1 vs. Modelo Colectivo NEMA',
+    aliases: ['Modelo 1:1', 'modelo 1 a 1', 'una laptop por niño', 'Canaima'],
+    category: 'Infraestructura NEMA',
+    shortDefinition: 'Contraste entre entregar un dispositivo a cada niño para llevar a casa versus concentrar equipamiento de alto rendimiento en centros comunitarios seguros.',
+    fullDefinition: 'Análisis de costo-efectividad que demuestra por qué el modelo 1:1 (como las antiguas Canaimitas o OLPC) fracasa en contextos de pobreza extrema y cortes eléctricos debido a robos, falta de carga y rotura de pantallas; mientras que el modelo NEMA garantiza custodia segura, energía constante y mantenimiento centralizado.',
+    exampleInVenezuela: 'Laboratorios comunitarios NEMA compartidos donde una laptop atiende a 3 alumnos por día con 95% de operatividad.',
+    relatedTerms: ['NEMA', 'Brecha Digital'],
+    chapters: ['capitulo-2', 'apendice-1'],
+  },
+  {
+    id: 'etica-algoritmica',
+    term: 'Ética Algorítmica y Sesgo en IA',
+    aliases: ['Ética Algorítmica', 'sesgo algorítmico', 'sesgos en IA'],
+    category: 'Tecnología e IA',
+    shortDefinition: 'Prevención de sesgos culturales, de género y geográficos en los modelos de inteligencia artificial aplicados a la educación.',
+    fullDefinition: 'Conjunto de directrices para asegurar que los algoritmos de tutoría no reproduzcan estereotipos, reconozcan la variante dialectal y cultural venezolana, y garanticen que ningún estudiante sea excluido por decisiones opacas de evaluación automatizada.',
+    exampleInVenezuela: 'Auditoría de tutores automáticos para que comprendan giros lingüísticos de las diversas regiones venezolanas (Zulia, Andes, Oriente).',
+    relatedTerms: ['Soberanía Tecnológica', 'Alfabetización en IA'],
+    chapters: ['capitulo-3'],
+  },
+];
+
+export function getGlossaryTermById(id: string): GlossaryTerm | undefined {
+  return glossaryTerms.find((t) => t.id === id);
+}
+
+export function searchGlossary(query: string): GlossaryTerm[] {
+  const clean = query.trim().toLowerCase();
+  if (!clean) return glossaryTerms;
+  return glossaryTerms.filter((term) => {
+    return (
+      term.term.toLowerCase().includes(clean) ||
+      term.shortDefinition.toLowerCase().includes(clean) ||
+      term.fullDefinition.toLowerCase().includes(clean) ||
+      term.category.toLowerCase().includes(clean) ||
+      term.aliases?.some((a) => a.toLowerCase().includes(clean))
+    );
+  });
+}
